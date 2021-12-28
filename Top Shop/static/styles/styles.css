@@ -1,0 +1,390 @@
+@font-face {
+    font-family: Open-Sans-Regular;
+    src: url(/static/fonts/OpenSans-Regular.ttf);
+    font-size-adjust: 18px;
+}
+
+@font-face {
+    font-family: Open-Sans-Bold;
+    src: url(/static/fonts/OpenSans-Bold.ttf);
+    font-size-adjust: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, li a, button {
+    font-family: Open-Sans-Bold, Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+body>img.background {
+    filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+
+    width: 80vw;
+    left: 10vw;
+    top: 0;
+    border-radius: 0px 0px 15px 15px;
+    z-index: 20;
+
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.096);
+}
+
+main {
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-family: Open-Sans-Regular, Arial, Helvetica, sans-serif;
+}
+
+main>div {
+    margin-top: 35px;
+    border-radius: 20px;
+    padding: 35px;
+    box-sizing: border-box;
+    background-color: rgb(240, 240, 240);
+}
+
+form {
+    display: inline-block;
+}
+
+footer {
+    position: relative;
+    margin-top: 35px;
+    width: 100%;
+    height: 100px;
+    padding-top: 25px;
+
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    background-color: rgb(240, 240, 240);
+}
+
+div.HotSale {
+    position: relative;
+
+    margin-top: -35px;
+    padding: 0;
+    height: 550px;
+
+    background-color: rgba(0, 0, 0, 0%);
+}
+
+.HotSale>div.TextHS {
+    display: inline-block;
+    box-sizing: border-box;
+
+    border-radius: 20px;
+    padding: 35px;
+    width: 58%;
+    height: 100%;
+    padding-bottom: 35px;
+
+    background-color: rgb(241, 241, 241);
+}   
+
+.TextHS h1, .TextHS p, .TextHS h4 {
+    margin-top: 20px;
+}
+
+.TextHS button {
+    margin-top: 25px;
+}
+
+.TextHS span {
+    font-size: 45px;
+}
+
+.imageHS {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 30px;
+    right: 30px;
+    background-color: rgb(29, 121, 29);
+}
+
+.imageHS img {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+button {
+    outline: none;
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(29, 121, 29);
+    border: solid 1.5px rgb(24, 95, 24);
+}
+
+.TextHS button:hover {
+    background-color: rgb(24, 95, 24);
+}
+
+del {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+del::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    border-bottom: solid 2px rgb(71, 0, 0);
+    transform: rotate(12deg);
+}
+
+ul {
+    padding: 0;
+}
+
+.logo  {
+    margin: 8px 0 0 8px;
+}
+
+.LogIn button  {
+
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 9.5px 8px 0 0;
+
+    background: linear-gradient(135deg, rgb(243, 179, 243), violet, rgb(132, 0, 255), rgb(21, 21, 177), rgb(11, 11, 139));
+}
+
+.LogIn .LogInMenu2 button {
+    float: left;
+    width: 65px;
+    height: 65px;
+    margin: 0;
+}   
+
+.LogIn {
+    position: relative;
+}
+
+.LogIn .LogInMenu {
+    position: absolute;
+    top: -390px;
+    right: 8px;
+
+    width: 255px;
+    height: 300px;
+}
+
+.LogIn .LogInMenu2 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+
+    width: 240px;
+    height: 230px;
+    padding: 8px;
+
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px 0 20px 20px;
+}
+
+.LogIn:hover .LogInMenu{
+    transform: translate(0, 400px);
+}
+
+.LogIn .LogInMenu:hover{
+    transform: translate(0, 400px);
+}
+
+.LogInMenu2 a {
+    text-decoration: none;
+    color: black;
+    display: block;
+
+    font-size: 18px;
+    padding-top: 18px;
+}
+
+.LogInMenu2 a.MkADeposit {
+    display: inline-block;
+
+    margin-top: -5px;
+    margin-bottom: 30px;
+    padding-left: 6px;
+
+    color: rgb(24, 95, 24);
+}
+
+.LogInMenu2 a.MkADeposit2 {
+    position: absolute;
+    display: inline-block;
+    top: 65px;
+    right: 39px;
+
+    margin-top: -20px;
+    padding-top: 0;
+    font-size: 18px;
+
+    color: rgb(24, 95, 24);
+    text-decoration: underline rgb(24, 95, 24);
+}
+
+.LogInMenu2 .NotDeposit {
+    color: rgb(24, 95, 24);
+    margin-bottom: 5px;
+    border-bottom: solid 1px rgb(24, 95, 24);
+}
+
+.logo img {
+    width: 60px;
+    transform: scale(-1, 1)
+}
+
+header li>a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+header li {
+    display: inline-block;
+    list-style-type: none;
+
+    padding: 9px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+header li:hover {
+    background-color: rgba(217, 178, 235, 0.644);
+    border-radius: 11px;
+}
+
+.AllproductionBox {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.AllproductionBox button:hover {
+    background-color: rgb(24, 95, 24);
+}
+
+.ProductionImage {  
+    width: 200px;
+    height: 200px;
+    background-color: rgb(29, 121, 29);
+}
+
+.ProductionImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.ProdBox {
+    position: relative;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.096) ;
+}
+
+.ProdBox h2 {
+    margin-top: 5px;
+}
+
+.TextAP {
+    right: 0;
+    display: inline-block;
+    width: 83%;
+}
+
+.TextAP h2, .TextAP p, .TextAP button, .TextAP h4 {
+    margin-top: 10px;
+}
+
+.cost {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.News {
+    position: relative;
+
+    padding: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.News a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+
+    padding: 10px;
+    width: 45%;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.imgNews {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(29, 121, 29);
+}
+
+.imgNews img {
+    width: 150px;
+    height: 150px;
+}
+
+.TextNews {
+    width: 70%
+}
+
+#allproductionBox {
+    position: absolute;
+    top: -75px;
+}
+#news {
+    position: absolute;
+    top: -75px;
+}
